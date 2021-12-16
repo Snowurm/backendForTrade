@@ -1,0 +1,110 @@
+### Items
+GET http://localhost:3001/api/items
+###
+POST http://localhost:3001/api/items
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJAdXNlci5maSIsImlkIjoiNjFhOTJmNDQzOWYwMjc0YmJiMTIxMzUzIiwiaWF0IjoxNjM5MjI0NDk3fQ.dsh53sD4ETzQJbrPeQGVcSxBnKpuDqREXoEpb6jxh04
+
+{
+    "type":"Omena",
+    "count":"13",
+    "price":"13"
+}
+
+
+### Create
+POST http://localhost:3001/api/items
+Content-Type: application/json
+
+{
+    "type":"Omena",
+    "count":"12",
+    "price":"12"
+}
+
+### Create
+POST http://localhost:3001/api/login/
+Content-Type: application/json
+
+{
+    "username":"user@user.fi",
+    "password":"password"
+}
+### Create
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username":"qeeeee",
+    "password":"4123",
+    "firstName": "Dahir",
+    "lastName": "Hussein"
+}
+
+    # username: {
+    #     type: String,
+    #     minlength: 3,
+    #     unique: true,
+    #     required: true,
+    # },
+    # name: {
+    #     type: String,
+    #     // minlength: 2,
+    #     // required: true
+    # },
+    # firstName: {
+    #     type: String,
+    #     minlength: 2,
+    #     required: true,
+    # },
+    # lastName: {
+    #     type: String,
+    #     minlength: 1,
+    # },
+    # eMail: {
+    #     type: String,
+    # },
+    # passwordHash: {
+    #     type: String,
+    #     required: true,
+    #     minlength: 1,
+    # },
+    # items: [
+    #     {
+    #         type: mongoose.Schema.Types.ObjectId,
+    #         ref: "Item",
+    #     },
+    # ],
+
+### Read
+GET http://localhost:3001/api/login
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJAdXNlci5maSIsImlkIjoiNjFhOTJmNDQzOWYwMjc0YmJiMTIxMzUzIiwiaWF0IjoxNjM5MjI0NDk3fQ.dsh53sD4ETzQJbrPeQGVcSxBnKpuDqREXoEpb6jxh04
+
+### Read
+GET http://localhost:3001/api/login
+### Read
+GET http://localhost:3001/api/items
+### Read
+GET http://localhost:3001/api/users
+### Read
+GET http://localhost:3001/api/users/61b5f5bc1c7ed04a1feea798
+### Read
+GET http://localhost:3001/api/items/61812c685e79ac2da21a7dda
+### Update
+PUT http://localhost:3001/api/items/61812c685e79ac2da21a7dda
+Content-Type: application/json
+
+{
+    "type":"Banaani",
+    "count":122313123213,
+    "price":12
+}
+### Delete
+DELETE http://localhost:3001/api/items/61812c685e79ac2da21a7ddd
+### Delete
+DELETE http://localhost:3001/api/signup
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vdXNlMTIzIiwiaWQiOiI2MWFjZmY4MjRkODZiMmE4ZjY0ZDcxYzIiLCJpYXQiOjE2Mzg3Mjc1NjJ9.aIKJnSjKi8voMgQvr0PaH3WQwY7Fw0OsnvGjGdrOhnA
+### Delete
+DELETE http://localhost:3001/api/users

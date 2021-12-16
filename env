@@ -1,0 +1,6 @@
+Use this as a template to create .env
+
+SECRET=blue123
+DEV_MONGODB_URI=mongodb://000.000.000.000:27017
+TEST_MONGODB_URI=mongodb://000.000.000.000:27017
+PORT=3001
