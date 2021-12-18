@@ -35,47 +35,11 @@ POST http://localhost:3001/api/users
 Content-Type: application/json
 
 {
-    "username":"qeeeee",
+    "username":"qwe",
     "password":"4123",
     "firstName": "Dahir",
     "lastName": "Hussein"
 }
-
-    # username: {
-    #     type: String,
-    #     minlength: 3,
-    #     unique: true,
-    #     required: true,
-    # },
-    # name: {
-    #     type: String,
-    #     // minlength: 2,
-    #     // required: true
-    # },
-    # firstName: {
-    #     type: String,
-    #     minlength: 2,
-    #     required: true,
-    # },
-    # lastName: {
-    #     type: String,
-    #     minlength: 1,
-    # },
-    # eMail: {
-    #     type: String,
-    # },
-    # passwordHash: {
-    #     type: String,
-    #     required: true,
-    #     minlength: 1,
-    # },
-    # items: [
-    #     {
-    #         type: mongoose.Schema.Types.ObjectId,
-    #         ref: "Item",
-    #     },
-    # ],
-
 ### Read
 GET http://localhost:3001/api/login
 Content-Type: application/json
@@ -88,7 +52,19 @@ GET http://localhost:3001/api/items
 ### Read
 GET http://localhost:3001/api/users
 ### Read
-GET http://localhost:3001/api/users/61b5f5bc1c7ed04a1feea798
+GET http://localhost:3001/api/users/61bc60ae98b7ab17a9220b5e
+### Read
+GET http://localhost:3001/api/users/61bc60ae98b7ab17a9220b5e/items
+
+### Post
+POST http://localhost:3001/api/users/61bc60ae98b7ab17a9220b5e/items
+Content-Type: application/json
+
+{
+    "type":"Omena",
+    "count":1392,
+    "price":5
+}
 ### Read
 GET http://localhost:3001/api/items/61812c685e79ac2da21a7dda
 ### Update
@@ -97,7 +73,7 @@ Content-Type: application/json
 
 {
     "type":"Banaani",
-    "count":122313123213,
+    "count":123,
     "price":12
 }
 ### Delete
